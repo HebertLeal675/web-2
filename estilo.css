@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    width: 100%;
+}
+
+/*Inicia section 1*/
+.section-1 {
+    width: 100%;
+    height: 10em;
+    background: linear-gradient(90deg, #8B0000, #2F4F4F); /* Degradado de rojo oscuro a gris oscuro */
+    padding-top: 1.5em;
+}
+
+.header {
+    background-color: #2d2f3e;
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 25%;
+    height: 100%;
+}
+
+.menu {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.img img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.menu a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: 2em 1em;
+}
+
+.menu a:hover {
+    background-color: darkred;
+}
+
+/*Finaliza section 1*/
+
+/*Inicia section 2*/
+.section-2 {
+    width: 100%;
+    height: calc(100vh - 20em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.s2-textos {
+    width: 80%;
+    height: 25%;
+}
+
+.s2-img {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo {
+    font-size: 2em;
+    text-align: center;
+    color: #454245;
+}
+
+.s2-textos hr {
+    width: 3em;
+    height: 0.25em;
+    background: linear-gradient(90deg, #8B0000, #2F4F4F); /* Degradado de rojo oscuro a gris oscuro */
+    border: none;
+    border-radius: 1em;
+    margin: 1em auto;
+}
+
+.s2-textos p {
+    font-size: 1.25em;
+}
+
+.s2-contenido {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenido-img {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.contenido-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.contenido-texto {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.contenido-texto h2 {
+    font-size: 1.25em;
+    color: #8B0000; /* Rojo oscuro */
+}
+
+.contenido-texto p {
+    font-size: 1.1em;
+    color: gray;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.contenido-texto a {
+    text-decoration: none;
+    color: white;
+    background-color: #8B0000; /* Rojo oscuro */
+    width: 35%;
+    padding: 0.5em 0;
+    border: none;
+    border-radius: 0.32em;
+    text-align: center;
+}
+
+/*Finaliza section 2*/
+
+/*Inicia section 3*/
+.section-3 {
+    width: 100%;
+    height: 10em;
+    background: #2f2f2f; /* Gris oscuro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 hr {
+    background: linear-gradient(90deg, #8B0000, #2F4F4F); /* Degradado de rojo oscuro a gris oscuro */
+    width: 100%;
+    height: 5%;
+    border: none;
+}
+
+.s3-contenido {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.s3-logo {
+    width: 50%;
+}
+
+.s3-logo img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.s3-textos {
+    width: 30%;
+}
+
+.s3-textos h3 {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 0.25em 0;
+}
+
+.s3-textos p {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.s3-textos a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    height: 30%;
+    border-top: #454245 solid 0.0725em;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: #fff;
+    padding: 0 10%;
+}
+
+.autor {
+    text-decoration: none;
+    color: #fff;
+    margin: 0.25em;
+}
+
+.Politicas {
+    text-decoration: none;
+    color: #fff;
+    margin: 5em;
+}
+/*Finaliza section 3*/
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .section-1,
+    .section-2,
+    .section-3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .header,
+    .s2-textos,
+    .s2-img,
+    .s3-contenido,
+    .footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 1em 0;
+    }
+
+    .img {
+        width: auto;
+    }
+
+    .img img {
+        width: 100px;
+        height: auto;
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        padding: 0.6em 0.8em;
+        font-size: 0.9em;
+    }
+
+    .s3-logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .s3-contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .s3-textos {
+        width: auto;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 1em 0;
+    }
+
+    .autor,
+    .Politicas {
+        margin: 0 0.5em;
+    }
+}
+
+.historia-de-berserk .section-2 {
+    padding: 100%;
+    margin-bottom: 1em;
+}
